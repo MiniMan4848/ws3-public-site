@@ -1,0 +1,82 @@
+@font-face {
+  font-family: switzer;
+  src: url(../assets/fonts/Switzer-Regular.otf);
+}
+
+@font-face {
+  font-family: switzerBold;
+  src: url(../assets/fonts/Switzer-Bold.otf);
+}
+
+.logo {
+  position: absolute;
+  top: 63px;
+  left: 144px;
+  width: 103px;
+  height: 46px;
+  opacity: 80%;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.discordLogo {
+  position: absolute;
+  top: 70px;
+  right: 240px;
+  width: 24px;
+  height: 18px;
+  opacity: 80%;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.docs {
+  position: absolute;
+  top: 63px;
+  right: 145px;
+  color: white;
+  text-decoration: none;
+  font-family: switzer;
+  font-size: 24px;
+  opacity: 80%;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.docs:hover {
+  opacity: 100%;
+}
+
+.discordLogo:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 0px;
+}
+
+h1 {
+  font-family: switzerBold;
+  font-size: 100px;
+  background-image: linear-gradient(180deg, rgba(31,44,164,1) 0%, rgba(65,65,232,1) 49%, rgb(81, 69, 255) 67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent
+}
+
+.textDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: switzer;
+  font-size: 36px;
+  margin-top: -130px;
+}
