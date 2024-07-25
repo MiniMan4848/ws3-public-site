@@ -46,6 +46,14 @@ export default function LandingPage() {
           <p className="features">unlimited number of wallets</p>
         </div>
       </div>
+
+      <div className="buttonContainer">
+        <a href="https://google.com">
+          <button>
+            Press here to join our discord server to learn more or purchase!
+          </button>
+        </a>
+      </div>
     </>
   );
 }
