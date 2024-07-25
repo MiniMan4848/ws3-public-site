@@ -8,19 +8,29 @@
   src: url(../assets/fonts/Switzer-Bold.otf);
 }
 
+@font-face {
+  font-family: helvectia;
+  src: url(../assets/fonts/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+  font-family: helvectiaBold;
+  src: url(../assets/fonts/HelveticaNeueBold.otf);
+}
+
 .logo {
   position: absolute;
-  top: 63px;
+  top: 6.6%;
   left: 144px;
   width: 103px;
   height: 46px;
   opacity: 80%;
   transition: opacity 0.15s ease-in-out;
 }
-
+/* 70px; 7.5%;*/
 .discordLogo {
   position: absolute;
-  top: 70px;
+  top: 7.6%;
   right: 240px;
   width: 24px;
   height: 18px;
@@ -30,7 +40,7 @@
 
 .docs {
   position: absolute;
-  top: 63px;
+  top: 6.6%;
   right: 145px;
   color: white;
   text-decoration: none;
@@ -79,4 +89,80 @@ h1 {
   font-family: switzer;
   font-size: 36px;
   margin-top: -130px;
+}
+
+.boxOne, .boxTwo {
+  background-color: #E5E1FF;
+  padding-left: 37px;
+  padding-bottom: 49px;
+  padding-top: 25px;
+  width: 405px;
+  float: left;
+  box-sizing: border-box;
+  border-radius: 40px;
+  margin-top: 50px;
+  box-shadow: 0 0 0 1px rgb(167, 188, 255);
+  transition: all 0.12s ease-in-out;
+}
+
+.boxOne {
+  margin-right: 95px;
+}
+
+.boxTwo {
+  margin-left: 95px;
+}
+
+h2 {
+  color: #3342E7;
+  font-size: 36px;
+  font-family: switzerBold;
+  padding-bottom: 0px;
+  margin-top: 0;
+}
+
+.price {
+  display: inline-flex;
+  align-items: baseline;
+  color: black;
+  font-family: helvectiaBold;
+  padding: 0;
+  margin: 0;
+}
+
+.price h3 {
+  color: black;
+  font-size: 44px;
+  padding: 0;
+  margin: 0;
+  margin-right: 8px;
+}
+
+h4 {
+  opacity: 50%;
+  font-size: 24px;
+  padding-bottom: 18px;
+  margin: 0;
+}
+
+.features {
+  color: black;
+  opacity: 70%;
+  font-family: helvectia;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.boxOne:hover, .boxTwo:hover {
+  box-shadow: 0 0 0 3px rgb(167, 188, 255);
+  background-color: #ced9ff;
+  transform: translateY(-10px);
 }
