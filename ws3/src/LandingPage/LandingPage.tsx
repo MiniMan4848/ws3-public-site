@@ -6,12 +6,12 @@ export default function LandingPage() {
   return (
     <>
       <div>
-        <a href="https://google.com">
+        <a href="https://walletstalker.com">
           <img className="logo" src={wsWhiteLogo} />
         </a>
       </div>
       <div>
-        <a href="https://google.com">
+        <a href="https://discord.gg/Du86v28Na3">
           <img className="discordLogo" src={discordWhiteLogo} />
         </a>
       </div>
@@ -48,7 +48,7 @@ export default function LandingPage() {
       </div>
 
       <div className="buttonContainer">
-        <a href="https://google.com">
+        <a href="https://discord.gg/Du86v28Na3">
           <button>
             Press here to join our discord server to learn more or purchase!
           </button>
