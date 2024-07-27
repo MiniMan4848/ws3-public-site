@@ -27,6 +27,7 @@
   opacity: 80%;
   transition: opacity 0.15s ease-in-out;
 }
+
 /* 70px; 7.5%;*/
 .discordLogo {
   position: absolute;
@@ -50,8 +51,9 @@
   transition: opacity 0.15s ease-in-out;
 }
 
-.docs:hover {
+.logo:hover {
   opacity: 100%;
+  cursor: pointer;
 }
 
 .discordLogo:hover {
@@ -59,9 +61,8 @@
   cursor: pointer;
 }
 
-.logo:hover {
+.docs:hover {
   opacity: 100%;
-  cursor: pointer;
 }
 
 .centerDiv {
@@ -116,6 +117,12 @@ h1 {
   margin-left: 95px;
 }
 
+.boxOne:hover, .boxTwo:hover {
+  box-shadow: 0 0 0 3px rgb(167, 188, 255);
+  background-color: #ced9ff;
+  transform: translateY(-20px);
+}
+
 h2 {
   color: #3342E7;
   font-size: 36px;
@@ -162,12 +169,6 @@ h4 {
   justify-content: center;
   align-items: center;
   
-}
-
-.boxOne:hover, .boxTwo:hover {
-  box-shadow: 0 0 0 3px rgb(167, 188, 255);
-  background-color: #ced9ff;
-  transform: translateY(-20px);
 }
 
 .buttonContainer {
