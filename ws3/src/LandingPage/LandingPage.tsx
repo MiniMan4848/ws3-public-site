@@ -16,7 +16,7 @@ export default function LandingPage() {
         </a>
       </div>
       <div>
-        <a className="docs" href="https://google.com">
+        <a className="docs" href="https://docs.walletstalker.com">
           docs
         </a>
       </div>
