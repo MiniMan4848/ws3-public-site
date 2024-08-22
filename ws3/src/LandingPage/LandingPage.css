@@ -18,23 +18,23 @@
   src: url(../assets/fonts/HelveticaNeueBold.otf);
 }
 
+/* Logo and Links */
 .logo {
   position: absolute;
   top: 6.6%;
-  left: 144px;
-  width: 103px;
-  height: 46px;
+  left: 20px;
+  width: 80px;
+  height: auto;
   opacity: 80%;
   transition: opacity 0.15s ease-in-out;
 }
 
-/* 70px; 7.5%;*/
 .discordLogo {
   position: absolute;
   top: 7.6%;
-  right: 240px;
+  right: 20px;
   width: 24px;
-  height: 18px;
+  height: auto;
   opacity: 80%;
   transition: opacity 0.15s ease-in-out;
 }
@@ -42,116 +42,94 @@
 .docs {
   position: absolute;
   top: 6.6%;
-  right: 145px;
+  right: 60px;
   color: white;
   text-decoration: none;
   font-family: switzer;
-  font-size: 24px;
+  font-size: 18px;
   opacity: 80%;
   transition: opacity 0.15s ease-in-out;
 }
 
-.logo:hover {
-  opacity: 100%;
-  cursor: pointer;
-}
-
-.discordLogo:hover {
-  opacity: 100%;
-  cursor: pointer;
-}
-
-.docs:hover {
-  opacity: 100%;
-}
-
+/* Centered Title */
 .centerDiv {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 40vh;
-  margin: 0px;
 }
 
 h1 {
-  transform: translateY(-10px);
   font-family: switzerBold;
-  font-size: 100px;
+  font-size: 48px;
   background-image: linear-gradient(180deg, rgba(31,44,164,1) 0%, rgba(65,65,232,1) 49%, rgb(81, 69, 255) 67%);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent
+  color: transparent;
+  margin: 0;
 }
 
+/* Text Below Title */
 .textDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: switzer;
-  font-size: 36px;
-  margin-top: -130px;
-  transform: translateY(-10px);
+  font-size: 24px;
+  margin-top: -30px;
 }
 
+/* Box Container */
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Pricing Boxes */
 .boxOne, .boxTwo {
-  transform: translateY(-10px);
   background-color: #E5E1FF;
-  padding-left: 37px;
-  padding-bottom: 49px;
-  padding-top: 25px;
-  width: 405px;
-  float: left;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px 0;
+  border-radius: 20px;
   box-sizing: border-box;
-  border-radius: 40px;
-  margin-top: 50px;
   box-shadow: 0 0 0 1px rgb(167, 188, 255);
   transition: all 0.12s ease-in-out;
-}
-
-.boxOne {
-  margin-right: 95px;
-}
-
-.boxTwo {
-  margin-left: 95px;
 }
 
 .boxOne:hover, .boxTwo:hover {
   box-shadow: 0 0 0 3px rgb(167, 188, 255);
   background-color: #ced9ff;
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
 
 h2 {
   color: #3342E7;
-  font-size: 36px;
+  font-size: 24px;
   font-family: switzerBold;
-  padding-bottom: 0px;
-  margin-top: 0;
+  margin: 0 0 10px 0;
 }
 
 .price {
-  display: inline-flex;
+  display: flex;
   align-items: baseline;
-  color: black;
   font-family: helvectiaBold;
-  padding: 0;
-  margin: 0;
 }
 
 .price h3 {
-  color: black;
-  font-size: 44px;
-  padding: 0;
-  margin: 0;
-  margin-right: 8px;
+  font-size: 36px;
+  margin-right: 5px;
 }
 
 h4 {
   opacity: 50%;
-  font-size: 24px;
-  padding-bottom: 18px;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -159,44 +137,80 @@ h4 {
   color: black;
   opacity: 70%;
   font-family: helvectia;
-  font-size: 24px;
-  padding: 0;
-  margin: 0;
+  font-size: 18px;
 }
 
-.boxContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
+/* Button */
 .buttonContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 69px;
+  margin-top: 40px;
 }
 
 button {
-  transform: translateY(-10px);
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #E5E1FF;
   color: black;
-  width: 1000px; 
-  height: 105px;
+  width: 90%;
+  max-width: 400px;
+  height: 60px;
   border: none;
   cursor: pointer;
   text-align: center;
   font-family: helvectia;
-  font-size: 32px; 
+  font-size: 20px;
   transition: all 0.15s ease-in-out;
 }
 
 button:hover {
   background-color: rgb(88, 101, 242);
   box-shadow: 0px 0px 50px 1px rgba(88, 101, 242, 0.5);
-  border-radius: 55px;
-  transform: translateY(-20px);
+  transform: translateY(-10px);
 }
 
+/* Media Queries */
+@media (min-width: 768px) {
+  /* Desktop View */
+  .logo {
+    top: 6.6%;
+    left: 144px;
+    width: 103px;
+    height: auto;
+  }
+
+  .discordLogo {
+    top: 7.6%;
+    right: 240px;
+  }
+
+  .docs {
+    top: 6.6%;
+    right: 145px;
+    font-size: 24px;
+  }
+
+  .centerDiv h1 {
+    font-size: 100px;
+  }
+
+  .textDiv {
+    font-size: 36px;
+    margin-top: -130px;
+  }
+
+  .boxContainer {
+    flex-direction: row;
+  }
+
+  .boxOne, .boxTwo {
+    width: 405px;
+    margin: 0 50px;
+  }
+
+  .buttonContainer button {
+    width: 1000px;
+    height: 105px;
+    font-size: 32px;
+  }
+}
